@@ -31,8 +31,9 @@ No external libraries are required.
 python main.py 
 ```
 ***Future Improvements***
-Maybe adding a GUI.
+> Maybe adding a GUI.
 
 *Author*
-Jiya Patel
+> Jiya Patel
 GitHub : @jiyapatel2
+
