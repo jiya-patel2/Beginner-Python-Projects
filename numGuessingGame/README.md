@@ -31,6 +31,4 @@ Modules: random (standard library), plus custom art and function modules.
 >Add input validation (handle if user types "medium" or a non-number).
 >Create a GUI version using Tkinter.
 
-Author
-Jiya Patel
-GitHub: @jiyapatel2
+
