@@ -2,13 +2,6 @@
 
 A Python command-line game where you test your knowledge of anime popularity! Guess which of two anime has a higher rating and build your high score.
 
-##  Table of Contents
-- [Features](#features)
-- [Prerequisites](#prerequisites)
-- [File Setup (Crucial Step)](#file-setup)
-- [How to Run](#how-to-run)
-- [How to Play](#how-to-play)
-
 ##  Features
 - **Endless Gameplay:** The game continues as long as you guess correctly.
 - **Score Tracking:** Keeps track of your current winning streak.
@@ -40,4 +33,5 @@ Bash
 3. You must guess which one has the Higher Rating.
 4. Type 'A' or 'B' and hit Enter.
 5. If you are correct, you get a point and the game continues.
+
 6. If you are wrong, the game ends and shows your final score.
