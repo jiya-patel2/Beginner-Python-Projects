@@ -36,6 +36,5 @@ while flag:
     text = input("Type your message:\n").lower()
     shift = int(input("Type the shift number:\n"))
 
-
     caesar(original_text=text, shift_amount=shift, encode_or_decode=direction)
     flag = input("Do you want to continue the program:")
