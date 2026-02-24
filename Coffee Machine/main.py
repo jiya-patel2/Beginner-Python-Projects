@@ -41,6 +41,23 @@ def insertCoin():
     coins = rs_1 + (rs_2) + (rs_10) + (rs_5) + (rs_20)
     return coins
 
+def checkResources():
+    for key,value in MENU :
+        if key == coffee_type :
+            key["ingredients"][value] >= resources
+
+
+def serveOrder():
+    for key in resources:
+        insertCoin()
+        if coins < MENU[key]["cost"]:
+            break
+        else :
+            resources["money"] += MENU[key]["cost"]
+            change = coins - MENU[key]["cost"]
+            print(f"Here is Rs.{change} in change.")
+            print(f"Here is your {key} ☕️. Enjoy!")
+
 # Keeping machine On for all the customers
 machine = "on"
 while machine == "on" :
@@ -51,22 +68,13 @@ while machine == "on" :
         machine == "off"
         break
     elif coffee_type == "espresso":
-        insertCoin()
-        if coins < MENU["espresso"]["cost"]:
-            break
-        else :
-            resources["money"] += MENU["espresso"]["cost"]
-            change = coins - MENU["espresso"]["cost"]
-            resources[""]
-            print(f"Here is Rs.{change} in change.")
-            print("Here is your espresso ☕️. Enjoy!")
-    
-        print("\n")
+       serveOrder()
+       print("\n")
     elif coffee_type == "latte":
-        resources["money"] += MENU["latte"]["cost"]
+        serveOrder()
         print("\n")
     elif coffee_type == "cappuccino":
-        resources["money"] += MENU["cappuccino"]["cost"]
+        serveOrder()
         print("\n")
     elif coffee_type == "report":
         # if customer asks for report
